@@ -1,7 +1,21 @@
 # Item-Management
 
 
-    
+    classDiagram
+    InventoryManagementSystem --> JFrame
+    InventoryManagementSystem --> DefaultTableModel
+    InventoryManagementSystem --> JTable
+    class InventoryManagementSystem{
+        -frame: JFrame
+        -tableModel: DefaultTableModel
+        -table: JTable
+        -totalValueLabel: JLabel
+        +main()
+        +createAndShow()
+        +addItem()
+        +deleteSelected()
+        +recalcTotal()
+    }
 ✨ Features
 📦 Simple Inventory Tracking - Add, view and delete products
 
